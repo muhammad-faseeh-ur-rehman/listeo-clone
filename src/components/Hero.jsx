@@ -10,7 +10,6 @@ import {
   Search,
   UserRound,
 } from "lucide-react";
-
 const categories = [
   { label: "Eat & Drink", icon: Utensils },
   { label: "Apartments", icon: House },
