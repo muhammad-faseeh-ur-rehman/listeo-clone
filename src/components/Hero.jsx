@@ -29,18 +29,15 @@ export default function Hero() {
       />
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/55" />
-
       {/* Hero content */}
       <div className="relative z-10 mx-auto w-full max-w-[1580px] pt-10 text-center">
         <h1 className="mx-auto max-w-4xl text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl lg:text-[62px]">
           Find Nearby Coffee
           <span className="ml-1 inline-block h-[0.9em] w-[2px] translate-y-1 animate-pulse bg-white" />
         </h1>
-
         <p className="mt-5 text-lg font-medium text-white/75 sm:text-2xl md:text-[30px]">
           Explore top-rated attractions, activities and more!
         </p>
-
         {/* Search bar */}
         <form
           onSubmit={(e) => {
