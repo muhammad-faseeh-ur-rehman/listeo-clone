@@ -1,4 +1,3 @@
-
 import {
   Sparkles,
   Zap,
@@ -22,7 +21,6 @@ const categories = [
 export default function Hero() {
   return (
     <section className="relative flex min-h-[780px] items-center justify-center overflow-hidden bg-[#292929] px-5 pb-14 pt-36 text-white sm:min-h-[850px]">
-
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -37,7 +35,6 @@ export default function Hero() {
 
       {/* Hero content */}
       <div className="relative z-10 mx-auto w-full max-w-[1580px] pt-10 text-center">
-
         <h1 className="mx-auto max-w-4xl text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl lg:text-[62px]">
           Find Nearby Coffee
           <span className="ml-1 inline-block h-[0.9em] w-[2px] translate-y-1 animate-pulse bg-white" />
@@ -57,7 +54,7 @@ export default function Hero() {
             const category = data.get("category");
 
             alert(
-              `Search: ${query || "Any"}\nLocation: ${location || "Any"}\nCategory: ${category}`
+              `Search: ${query || "Any"}\nLocation: ${location || "Any"}\nCategory: ${category}`,
             );
           }}
           className="mx-auto mt-16 flex max-w-[1580px] flex-col gap-3 rounded-[32px] bg-white p-3 text-[#777] shadow-2xl md:flex-row md:items-center md:gap-0 md:rounded-full md:px-5 md:py-3"
@@ -127,8 +124,9 @@ export default function Hero() {
                 type="button"
                 key={label}
                 onClick={() => {
-                  document.querySelector('[name="category"]').value =
-                    label.toLowerCase().replaceAll(" ", "-");
+                  document.querySelector('[name="category"]').value = label
+                    .toLowerCase()
+                    .replaceAll(" ", "-");
                 }}
                 className="flex items-center gap-3 rounded-full border border-white/10 bg-white/15 px-5 py-3 text-base font-semibold text-white backdrop-blur-sm transition hover:bg-[#ff1744] sm:px-6 sm:text-lg"
               >
