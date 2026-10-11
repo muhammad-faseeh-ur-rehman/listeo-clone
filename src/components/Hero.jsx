@@ -16,7 +16,6 @@ const categories = [
   { label: "Services", icon: UserRound },
   { label: "Events", icon: Music },
 ];
-
 export default function Hero() {
   return (
     <section className="relative flex min-h-[780px] items-center justify-center overflow-hidden bg-[#292929] px-5 pb-14 pt-36 text-white sm:min-h-[850px]">
@@ -28,7 +27,6 @@ export default function Hero() {
             "url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2400&q=90')",
         }}
       />
-
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/55" />
 
