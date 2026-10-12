@@ -48,11 +48,9 @@ function ListingCard({ item }) {
           alt={item.name}
           className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
         />
-
         <span className="absolute left-3 top-3 rounded-full bg-[#f04472] px-3 py-1 text-[10px] font-semibold text-white">
           {item.badge}
         </span>
-
         <button
           type="button"
           aria-label={`Save ${item.name}`}
@@ -60,7 +58,6 @@ function ListingCard({ item }) {
         >
           <Heart size={15} />
         </button>
-
         <span className="absolute bottom-3 left-3 rounded bg-white px-2 py-1 text-[10px] font-semibold text-gray-700">
           {item.category}
         </span>
