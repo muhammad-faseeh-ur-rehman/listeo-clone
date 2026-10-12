@@ -19,7 +19,6 @@ export default function Navbar() {
     <header className="absolute inset-x-0 top-0 z-50 bg-black/45 text-white backdrop-blur-md">
       <nav className="mx-auto flex min-h-[90px] max-w-[1920px] items-center justify-between gap-5 px-5 py-4 lg:px-14">  
 
-        {/* Logo */}
         <a href="#" className="flex shrink-0 items-center gap-2">
           <MapPin
             size={49}
@@ -31,7 +30,6 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Desktop navigation */}
         <div className="hidden items-center gap-2 xl:flex">
           {navItems.map(({ label, icon: Icon, active }) => (
             <a
@@ -49,8 +47,6 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-
-        {/* Right-side actions */}
         <div className="hidden items-center gap-7 lg:flex">
           <a
             href="#"
@@ -76,8 +72,6 @@ export default function Navbar() {
             Add Listing
           </a>
         </div>
-
-        {/* Mobile menu toggle */}
         <button
           type="button"
           aria-label="Toggle navigation"
@@ -87,8 +81,6 @@ export default function Navbar() {
           {mobileOpen ? <X size={29} /> : <Menu size={29} />}
         </button>
       </nav>
-
-      {/* Mobile navigation */}
       {mobileOpen && (
         <div className="space-y-2 border-t border-white/10 bg-[#252525]/95 px-5 py-5 lg:hidden">
           {navItems.map(({ label, icon: Icon }) => (
