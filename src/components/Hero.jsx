@@ -124,8 +124,6 @@ export default function Hero() {
         Hello! I can help you find listings!
         <span className="absolute -bottom-2 right-8 h-4 w-4 rotate-45 bg-white" />
       </div>
-
-      {/* Floating chat button */}
       <button
         type="button"
         aria-label="Chat assistance"
