@@ -4,7 +4,6 @@ import {
   Heart,
   ArrowUpRight,
 } from "lucide-react";
-
 const listings = [
   {
     name: "The Modern Kitchen",
@@ -40,7 +39,6 @@ const listings = [
       "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
   },
 ];
-
 function ListingCard({ item }) {
   return (
     <article className="group overflow-hidden rounded-xl border border-gray-100 bg-white transition duration-300 hover:-translate-y-1 hover:shadow-lg">
