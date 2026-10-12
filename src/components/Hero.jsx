@@ -96,13 +96,10 @@ export default function Hero() {
             Search
           </button>
         </form>
-
-        {/* Featured categories */}
         <div className="mt-16">
           <h2 className="mb-6 text-lg font-semibold sm:text-xl">
             Or browse featured categories:
           </h2>
-
           <div className="flex flex-wrap items-center justify-center gap-3">
             {categories.map(({ label, icon: Icon }) => (
               <button
@@ -122,8 +119,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Floating chat greeting */}
       <div className="absolute bottom-28 right-5 hidden items-center gap-3 rounded-xl bg-white px-6 py-5 text-base text-[#555] shadow-lg md:flex lg:right-8">
         <span>👋</span>
         Hello! I can help you find listings!
