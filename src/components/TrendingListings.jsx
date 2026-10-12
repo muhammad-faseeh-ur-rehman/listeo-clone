@@ -62,7 +62,6 @@ function ListingCard({ item }) {
           {item.category}
         </span>
       </div>
-
       <div className="p-4">
         <div className="mb-2 flex items-center justify-between gap-2">
           <h3 className="text-[15px] font-semibold text-[#303039]">
@@ -73,12 +72,10 @@ function ListingCard({ item }) {
             className="shrink-0 text-gray-400"
           />
         </div>
-
         <p className="mb-3 flex items-center gap-1.5 text-xs text-gray-500">
           <MapPin size={13} className="text-[#f04472]" />
           {item.location}
         </p>
-
         <div className="flex items-center justify-between border-t border-gray-100 pt-3">
           <div className="flex items-center gap-1 text-xs">
             <Star
@@ -91,7 +88,6 @@ function ListingCard({ item }) {
               ({item.reviews})
             </span>
           </div>
-
           <span className="text-xs font-semibold text-[#f04472]">
             {item.price}
           </span>
