@@ -39,7 +39,6 @@ export default function Footer() {
     <footer id="footer" className="border-t border-gray-100 bg-white">
       <div className="mx-auto max-w-6xl px-5 py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
-          {/* Brand and contact */}
           <div>
             <a
               href="/"
@@ -66,7 +65,6 @@ export default function Footer() {
               hello@example.com
             </a>
 
-            {/* Real social media icons */}
             <div className="mt-5 flex gap-2">
               {socialLinks.map(({ name, icon: Icon, url }) => (
                 <a
@@ -84,7 +82,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Footer navigation */}
           {Object.entries(footerLinks).map(([heading, links]) => (
             <div key={heading}>
               <h3 className="mb-5 text-sm font-semibold text-gray-800">
@@ -107,12 +104,10 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Copyright and newsletter */}
         <div className="mt-12 grid gap-4 border-t border-gray-100 pt-7 md:grid-cols-2 md:items-center">
           <p className="text-xs leading-5 text-gray-400">
             © {new Date().getFullYear()} Listeo. All rights reserved.
           </p>
-
           <form
             onSubmit={(event) => {
               event.preventDefault();
