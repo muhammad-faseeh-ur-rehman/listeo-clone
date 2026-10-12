@@ -19,7 +19,6 @@ const categories = [
 export default function Hero() {
   return (
     <section className="relative flex min-h-[780px] items-center justify-center overflow-hidden bg-[#292929] px-5 pb-14 pt-36 text-white sm:min-h-[850px]">
-      {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -27,9 +26,7 @@ export default function Hero() {
             "url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2400&q=90')",
         }}
       />
-      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/55" />
-      {/* Hero content */}
       <div className="relative z-10 mx-auto w-full max-w-[1580px] pt-10 text-center">
         <h1 className="mx-auto max-w-4xl text-4xl font-medium tracking-tight sm:text-5xl md:text-6xl lg:text-[62px]">
           Find Nearby Coffee
@@ -38,7 +35,6 @@ export default function Hero() {
         <p className="mt-5 text-lg font-medium text-white/75 sm:text-2xl md:text-[30px]">
           Explore top-rated attractions, activities and more!
         </p>
-        {/* Search bar */}
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -46,14 +42,12 @@ export default function Hero() {
             const query = data.get("search");
             const location = data.get("location");
             const category = data.get("category");
-
             alert(
               `Search: ${query || "Any"}\nLocation: ${location || "Any"}\nCategory: ${category}`,
             );
           }}
           className="mx-auto mt-16 flex max-w-[1580px] flex-col gap-3 rounded-[32px] bg-white p-3 text-[#777] shadow-2xl md:flex-row md:items-center md:gap-0 md:rounded-full md:px-5 md:py-3"
         >
-          {/* AI search */}
           <label className="flex min-h-[66px] flex-1 items-center gap-3 border-b border-gray-200 px-4 md:border-b-0 md:border-r md:px-5">
             <Sparkles size={25} className="shrink-0 text-orange-400" />
             <input
@@ -67,7 +61,6 @@ export default function Hero() {
             </span>
           </label>
 
-          {/* Location */}
           <label className="flex min-h-[66px] flex-1 items-center gap-3 border-b border-gray-200 px-4 md:border-b-0 md:border-r md:px-10">
             <input
               type="text"
@@ -78,7 +71,6 @@ export default function Hero() {
             <MapPin size={23} fill="#999" className="shrink-0 text-white" />
           </label>
 
-          {/* Category */}
           <label className="flex min-h-[66px] flex-1 items-center gap-3 px-4 md:px-10">
             <select
               name="category"
@@ -96,7 +88,6 @@ export default function Hero() {
             <ChevronDown size={22} className="shrink-0" />
           </label>
 
-          {/* Search button */}
           <button
             type="submit"
             className="flex min-h-[66px] shrink-0 items-center justify-center gap-2 rounded-full bg-[#ff1744] px-12 text-xl font-bold text-white transition hover:bg-[#e90035] md:min-w-[200px]"
