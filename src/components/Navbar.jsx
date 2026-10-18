@@ -3,17 +3,14 @@ import {
   MapPin, Home, Layers, User, FileText,
   ShoppingCart, LogIn, ChevronDown, Menu, X
 } from "lucide-react";
-
 const navItems = [
   { label: "Home", icon: Home, active: true },
   { label: "Listings Layouts", icon: Layers },
   { label: "User Panel", icon: User },
   { label: "Pages", icon: FileText },
 ];
-
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
-
   return (
     <header className="absolute inset-x-0 top-0 z-50 bg-black/45 text-white backdrop-blur-md">
       <nav className="mx-auto flex min-h-[90px] max-w-[1920px] items-center justify-between gap-5 px-5 py-4 lg:px-14">  
