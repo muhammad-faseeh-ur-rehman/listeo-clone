@@ -51,7 +51,6 @@ export default function ClientStories() {
                 </p>
               </div>
             </div>
-
             <div className="mt-8 flex gap-2">
               <button
                 type="button"
@@ -69,7 +68,6 @@ export default function ClientStories() {
               </button>
             </div>
           </div>
-
           <div className="relative min-h-64 md:min-h-[430px]">
             <img
               src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
