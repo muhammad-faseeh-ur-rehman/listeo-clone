@@ -14,7 +14,6 @@ export default function Navbar() {
   return (
     <header className="absolute inset-x-0 top-0 z-50 bg-black/45 text-white backdrop-blur-md">
       <nav className="mx-auto flex min-h-[90px] max-w-[1920px] items-center justify-between gap-5 px-5 py-4 lg:px-14">  
-
         <a href="#" className="flex shrink-0 items-center gap-2">
           <MapPin
             size={49}
@@ -25,7 +24,6 @@ export default function Navbar() {
             listeo
           </span>
         </a>
-
         <div className="hidden items-center gap-2 xl:flex">
           {navItems.map(({ label, icon: Icon, active }) => (
             <a
@@ -59,7 +57,6 @@ export default function Navbar() {
             <LogIn size={23} />
             Sign In
           </a>
-
           <a
             href="#"
             className="flex items-center gap-3 rounded-full bg-[#ff1744] px-7 py-[19px] text-lg font-semibold transition hover:bg-[#e90035]"
@@ -91,15 +88,12 @@ export default function Navbar() {
               <ChevronDown size={16} className="ml-auto" />
             </a>
           ))}
-
           <a href="#" className="flex items-center gap-3 px-4 py-3">
             <ShoppingCart size={20} /> Cart (0)
           </a>
-
           <a href="#" className="flex items-center gap-3 px-4 py-3">
             <LogIn size={20} /> Sign In
           </a>
-
           <a
             href="#"
             className="flex items-center justify-center gap-2 rounded-full bg-[#ff1744] px-5 py-3 font-semibold"
