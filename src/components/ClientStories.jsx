@@ -1,5 +1,4 @@
 import { Quote, Star, ChevronLeft, ChevronRight } from "lucide-react";
-
 export default function ClientStories() {
   return (
     <section className="overflow-hidden bg-[#f8f8f9] py-16 md:py-20">
@@ -15,7 +14,6 @@ export default function ClientStories() {
             See what our community has to say
           </p>
         </div>
-
         <div className="grid overflow-hidden rounded-2xl bg-white md:grid-cols-[1.2fr_0.8fr]">
           <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-14">
             <Quote
@@ -23,24 +21,20 @@ export default function ClientStories() {
               className="mb-5 text-[#f04472]"
               fill="#fce0e8"
             />
-
             <div className="mb-5 flex gap-1 text-[#ffb547]">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} size={15} fill="currentColor" />
               ))}
             </div>
-
             <h3 className="text-xl font-semibold leading-relaxed text-[#303039] sm:text-2xl">
               “Finding the right local businesses has never been
               easier.”
             </h3>
-
             <p className="mt-5 max-w-lg text-sm leading-7 text-gray-500">
               This platform helped us discover amazing places and
               connect with businesses in our community. The experience
               is simple, helpful, and enjoyable.
             </p>
-
             <div className="mt-7 flex items-center gap-3">
               <img
                 src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&h=120&q=80"
@@ -48,7 +42,6 @@ export default function ClientStories() {
                 className="h-12 w-12 rounded-full object-cover"
                 loading="lazy"
               />
-
               <div>
                 <p className="text-sm font-semibold text-gray-800">
                   Sarah Mitchell
