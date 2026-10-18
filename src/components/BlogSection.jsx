@@ -1,5 +1,4 @@
 import { ArrowUpRight, CalendarDays } from "lucide-react";
-
 const posts = [
   {
     category: "Travel",
@@ -40,7 +39,6 @@ export default function BlogSection() {
               Stories, tips, and ideas from our community
             </p>
           </div>
-
           <a
             href="#footer"
             className="hidden items-center gap-1 text-xs font-semibold text-[#f04472] sm:inline-flex"
@@ -48,7 +46,6 @@ export default function BlogSection() {
             All articles <ArrowUpRight size={15} />
           </a>
         </div>
-
         <div className="grid gap-5 md:grid-cols-3">
           {posts.map((post) => (
             <article
@@ -61,25 +58,20 @@ export default function BlogSection() {
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
               />
-
               <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/15 to-transparent" />
-
               <div className="absolute left-4 top-4">
                 <span className="rounded-full bg-[#f04472] px-3 py-1.5 text-[10px] font-semibold text-white">
                   {post.category}
                 </span>
               </div>
-
               <div className="absolute inset-x-0 bottom-0 p-5 text-white">
                 <p className="mb-3 flex items-center gap-1.5 text-[11px] text-white/80">
                   <CalendarDays size={13} />
                   {post.date}
                 </p>
-
                 <h3 className="text-lg font-semibold leading-snug">
                   {post.title}
                 </h3>
-
                 <a
                   href="#footer"
                   className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-white transition group-hover:text-pink-200"
