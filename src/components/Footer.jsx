@@ -48,12 +48,11 @@ export default function Footer() {
               Discover great local places, connect with businesses,
               and explore something new every day.
             </p>
-
             <p className="mt-4 flex items-center gap-2 text-xs text-gray-500">
               <MapPin size={14} className="text-[#f04472]" />
               Discover places near you
             </p>
-
+G
             <a
               href="mailto:hello@example.com"
               className="mt-2 flex items-center gap-2 text-xs text-gray-500 hover:text-[#f04472]"
