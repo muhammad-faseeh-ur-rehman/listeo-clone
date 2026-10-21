@@ -26,7 +26,6 @@ const footerLinks = {
     "Terms & Conditions",
   ],
 };
-
 const socialLinks = [
   { name: "Facebook", icon: FaFacebookF, url: "https://www.facebook.com/" },
   { name: "Instagram", icon: FaInstagram, url: "https://www.instagram.com/" },
