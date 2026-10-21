@@ -80,7 +80,6 @@ export default function Footer() {
               <h3 className="mb-5 text-sm font-semibold text-gray-800">
                 {heading}
               </h3>
-
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link}>
@@ -96,7 +95,6 @@ export default function Footer() {
             </div>
           ))}
         </div>
-
         <div className="mt-12 grid gap-4 border-t border-gray-100 pt-7 md:grid-cols-2 md:items-center">
           <p className="text-xs leading-5 text-gray-400">
             © {new Date().getFullYear()} Listeo. All rights reserved.
