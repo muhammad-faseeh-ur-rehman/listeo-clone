@@ -52,7 +52,6 @@ export default function Footer() {
               <MapPin size={14} className="text-[#f04472]" />
               Discover places near you
             </p>
-G
             <a
               href="mailto:hello@example.com"
               className="mt-2 flex items-center gap-2 text-xs text-gray-500 hover:text-[#f04472]"
@@ -60,7 +59,6 @@ G
               <Mail size={14} className="text-[#f04472]" />
               hello@example.com
             </a>
-
             <div className="mt-5 flex gap-2">
               {socialLinks.map(({ name, icon: Icon, url }) => (
                 <a
