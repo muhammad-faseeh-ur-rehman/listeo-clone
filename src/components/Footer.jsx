@@ -32,7 +32,6 @@ const socialLinks = [
   { name: "X", icon: FaXTwitter, url: "https://x.com/" },
   { name: "LinkedIn", icon: FaLinkedinIn, url: "https://www.linkedin.com/" },
 ];
-
 export default function Footer() {
   return (
     <footer id="footer" className="border-t border-gray-100 bg-white">
@@ -45,7 +44,6 @@ export default function Footer() {
             >
               listeo<span className="text-[#f04472]">.</span>
             </a>
-
             <p className="mt-4 max-w-xs text-sm leading-7 text-gray-500">
               Discover great local places, connect with businesses,
               and explore something new every day.
